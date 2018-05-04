@@ -18,7 +18,9 @@ url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2
 url("https://use.typekit.com/af/a1d110/000000000000000000017087/27/l?subset_id=2&fvd=n4&v=3") format("opentype"); 
 }
 
-
+.first-menu div {
+    display: flex;
+}
 
 .second-menu {
     display: none;
@@ -265,10 +267,6 @@ a:hover .pict {
     font-style: italic;
 }
 
-.tweetter {
-    font-size: 
-}
-
 .button-social {
     border-radius: 5px;
     border: 1px solid #E5E5E5;
@@ -316,6 +314,14 @@ a:hover .pict {
     body {
         margin: 0;
     }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container-menu {
+        display: flex;
+    }
     
     .first-menu {
         display: none;
@@ -344,8 +350,8 @@ a:hover .pict {
     }
     
     .second-menu a {
-    color: #35C5B0;
-    font-style: italic;
+        color: #35C5B0;
+        font-style: italic;
     }
     
     .second-menu a:hover {
@@ -365,7 +371,7 @@ a:hover .pict {
     }
     
     .social {
-        display: none
+        display: none;
     }   
     
     .mail {
@@ -382,10 +388,8 @@ a:hover .pict {
 
 @media (max-width: 991px) {
     .container {
-        margin: 0;
-        padding: 0;
-        
-        
+        margin-left: auto;
+        margin-right: auto;
     }
     .menu img {
         display: none;
@@ -399,9 +403,6 @@ a:hover .pict {
     }
     .clare {
         display: none;
-    }
-    .slider-title {
-            
     }
     
     .slider-image a h3 {
@@ -460,11 +461,17 @@ a:hover .pict {
         margin-left: 2em;
     }
     
-    .social-footer img {
+    .social-footer {
         
     }
 } 
 
-@media (max-width: 500px) {
-        
+@media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
+
+    .mail {
+        display: none;
+    }
 }
